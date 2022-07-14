@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MayI Administration Control</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>MayI Administrative Access Registration</h1>
+      <form action="/register" method="POST">
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input type="text" class="form-control" id="firstName" aria-describedby="emailHelp" placeholder="Enter first name" name="first_name">
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input type="text" class="form-control" id="lastName" aria-describedby="emailHelp" placeholder="Enter last name" name="last_name">
+        </div>
+        <div class="form-group">
+          <label for="emailAddress">Email address</label>
+          <input type="email" class="form-control" id="emailAddress" aria-describedby="emailHelp" name="email" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+          <label for="emp_id">Employee ID</label>
+          <input type="number" class="form-control" id="emp_id" aria-describedby="emailHelp" name="emp_id">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="password" name="password">
+        </div>
+
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <br>
+      <br>
+      <a href="/login"> Click here to login </a>
+  </body>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MayI Administration Control</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>MayI Administrative Access Request</h1>
+      <form action="/request" id="reqform" method="POST">
+        <div class="form-group">
+          <label for="ip">IP of system</label>
+          <input type="text" form = "reqform" class="form-control" id="ip" aria-describedby="emailHelp" name="ip">
+        </div>
+        <div class="form-group">
+        	<label for="reason">Reason for administrative access</label>
+        	<textarea name="reason" form="reqform" class="form-control" id="reason" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+      <a href="/status"> Click here for request status </a>
+  </body>
